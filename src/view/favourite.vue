@@ -20,10 +20,10 @@ mixin pagenator
       |
       | 个人资料
 
-  h1 My Favourites
+  h1 我的收藏
 
   .mbox.error(v-if='error')
-    .title Failed to get list
+    .title 无法获取收藏列表
     p {{ error }}
 
   .loading.align-center(v-if='loading && !comics.length')

@@ -14,7 +14,7 @@ mixin thumb(item)
     placeholder
 
   .mbox.error(v-if='error')
-    .title Failed to get categories data
+    .title 无法获取分类数据
     p {{ error }}
 
   ul.categories-list

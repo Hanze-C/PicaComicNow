@@ -11,31 +11,31 @@
         | &nbsp;
         span.uid @{{ user.profile.email }}
     .card.slogan
-      h2 Slogan
+      h2 个人简介
       .slogan-view.flex(
         v-if='!sloganEdit',
         :class='{ "loading-cover": sloganLoading }'
       )
         p.pre.flex-1 {{ user.profile.slogan || '-' }}
         .edit-btn
-          a.pointer(@click='sloganEdit = true') edit
+          a.pointer(@click='sloganEdit = true') 编辑
       .slogan-edit(v-else)
         .flex
           label.flex-1(for='sloganEdit')
-            strong Update slogan
+            strong 更新简介
           .cancel-btn
-            a.pointer(@click='sloganEdit = false') cancel
+            a.pointer(@click='sloganEdit = false') 取消
         .flex.gap-1
           .edit-area.flex-1
             textarea#sloganEdit(v-model='sloganInput')
           .btn-area
-            button(:disabled='sloganLoading', @click='handleSloganEdit') Submit
+            button(:disabled='sloganLoading', @click='handleSloganEdit') 确认
     .card
       details
         pre {{ user.profile }}
 
   section.user-profile.no-profile(v-else)
-    h1.name Please login
+    h1.name 请先登录
 </template>
 
 <script setup lang="ts">
