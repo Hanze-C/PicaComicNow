@@ -1,6 +1,6 @@
 <template lang="pug">
 #about-container
-  h1 About us
+  h1 关于
 
   h2 Lorem ipsum
   .card
