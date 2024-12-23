@@ -8,7 +8,7 @@ mixin thumb(item)
         external-link-alt
 
 #categories-container
-  h1 Categories Index
+  h1 分类
 
   .loading.align-center(v-if='loading')
     placeholder

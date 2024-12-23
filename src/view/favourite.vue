@@ -18,7 +18,7 @@ mixin pagenator
       icon
         arrow-left
       |
-      | Profile
+      | 个人资料
 
   h1 My Favourites
 

@@ -12,11 +12,11 @@
       p hello, world
       p {{ time }}
     .card.flex-1
-      h2 Profile
+      h2 Links
       p
-        router-link.button(to='/profile') profile
+        router-link.button(to='/profile') 个人资料
         | &nbsp;
-        router-link.button(to='/favourite') favourite
+        router-link.button(to='/favourite') 我的收藏
 </template>
 
 <script setup lang="ts">
