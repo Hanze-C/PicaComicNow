@@ -42,7 +42,7 @@ export function replaceFileUrl(obj: Record<string, any>) {
           .replace('storage1.picacomic.com', 'proxy.hanze.icu/proxy/https://s3.picacomic.com')
           .replace('storage-b.picacomic.com', 'proxy.hanze.icu/proxy/https://s3.picacomic.com')
           .replace('img.picacomic.com', 'proxy.hanze.icu/proxy/https://s3.picacomic.com')
-          .replace('www.picacomic.com', 'pica-pica.wikawika.xyz')
+          .replace('www.picacomic.com', 'proxy.hanze.icu/proxy/https://www.picacomic.com')
       }
     }
     // Object
