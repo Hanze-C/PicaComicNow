@@ -35,14 +35,20 @@ export function replaceFileUrl(obj: Record<string, any>) {
     const key = i
     const val = obj[i]
 
+    const PICA_S3_BASE =
+      process.env.VITE_PICA_S3_BASE || 'https://s3.picacomic.com'
+
     // String
     if (typeof val === 'string') {
       if (val.startsWith('https://')) {
         obj[key] = val
-          .replace('storage1.picacomic.com', 's3.picacomic.com')
-          .replace('storage-b.picacomic.com', 's3.picacomic.com')
-          .replace('img.picacomic.com', 's3.picacomic.com')
-          .replace('www.picacomic.com', 'pica-pica.wikawika.xyz')
+          .replace('https://storage1.picacomic.com', PICA_S3_BASE)
+          .replace('https://storage-b.picacomic.com', PICA_S3_BASE)
+          .replace('https://img.picacomic.com', PICA_S3_BASE)
+          .replace(
+            'https://www.picacomic.com',
+            'https://pica-pica.wikawika.xyz'
+          )
       }
     }
     // Object
