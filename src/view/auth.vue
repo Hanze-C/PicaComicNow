@@ -1,28 +1,28 @@
 <template lang="pug">
 #auth-container
-  h1 Authorization
+  h1 账户管理
 
   .mbox.info(v-if='$route.query.tips', style='margin-bottom: 1rem')
     .title Tips
-    p You must log in to use this website
+    p 请先登录
 
   section(v-if='user.profile')
     .card
       h2 Hello, {{ user.profile.name }}
       .align-center
-        button(@click.prevent='handleSignOut') Sign out
+        button(@click.prevent='handleSignOut') 退出登录
 
   section(v-else)
     form.form.card.align-center(:class='{ "loading-cover": onAuthenticating }')
-      h2(style='left: 0; transform: none') Login
+      h2(style='left: 0; transform: none') 登录
       label
-        strong Username/email
+        strong 用户名
         input(v-model='email')
       label
-        strong Password
+        strong 密码
         input(v-model='password', type='password')
       div
-        button(@click.prevent='handleLogin') Login
+        button(@click.prevent='handleLogin') 登录
       //- Error
       .mbox.error(v-if='errorMsg')
         .title {{ errorTitle }}

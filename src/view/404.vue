@@ -1,7 +1,7 @@
 <template lang="pug">
 #error-404
   h1 404 Not Found
-  p This page has been lost
+  p 这个页面走丢了捏:(
 </template>
 
 <script setup lang="ts">

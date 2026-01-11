@@ -77,7 +77,7 @@
 
   section.extra-actions
     .card
-      h2 Extra Actions
+      h2 详细信息
       details
         summary Book Meta
         pre {{ bookMeta }}

@@ -8,13 +8,13 @@ mixin thumb(item)
         external-link-alt
 
 #categories-container
-  h1 Categories Index
+  h1 分类
 
   .loading.align-center(v-if='loading')
     placeholder
 
   .mbox.error(v-if='error')
-    .title Failed to get categories data
+    .title 无法获取分类数据
     p {{ error }}
 
   ul.categories-list

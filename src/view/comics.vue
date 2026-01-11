@@ -8,7 +8,7 @@ mixin pagenator
       icon
         arrow-left
       |
-      | Categories Index
+      | 分类
 
   h1(v-if='category') Comics in {{ category }}
   h1(v-else) Comics list

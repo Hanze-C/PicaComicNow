@@ -12,7 +12,7 @@ mixin pagenator
       icon
         arrow-left
       |
-      | Categories Index
+      | 分类
 
   h1(v-if='keyword') Search『{{ keyword }}』comics (page {{ page }})
   h1(v-else) Advanced Search

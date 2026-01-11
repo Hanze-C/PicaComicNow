@@ -4,19 +4,20 @@
 
   .mbox.info(style='margin-bottom: 1.5rem')
     .title Tips
-    p This site is under construction
+    p 本项目仍在开发中
 
   .flex.gap-1
     .card.flex-1
       h2 Greeting
-      p hello, world
+      p Hello, World!
+      p PicaComicNow@0.2.0
       p {{ time }}
     .card.flex-1
-      h2 Profile
+      h2 Links
       p
-        router-link.button(to='/profile') profile
+        router-link.button(to='/profile') 个人资料
         | &nbsp;
-        router-link.button(to='/favourite') favourite
+        router-link.button(to='/favourite') 我的收藏
 </template>
 
 <script setup lang="ts">
