@@ -36,15 +36,15 @@ export function replaceFileUrl(obj: Record<string, any>) {
     const val = obj[i]
 
     const PICA_S3_BASE =
-      process.env.VITE_PICA_S3_BASE || 'https://s3.picacomic.com'
+      process.env.VITE_PICA_S3_BASE || 'https://proxy.hanze.icu/proxy/https://s3.picacomic.com'
 
     // String
     if (typeof val === 'string') {
       if (val.startsWith('https://')) {
         obj[key] = val
-          .replace('https://storage1.picacomic.com', PICA_S3_BASE)
-          .replace('https://storage-b.picacomic.com', PICA_S3_BASE)
-          .replace('https://img.picacomic.com', PICA_S3_BASE)
+          .replace('https://proxy.hanze.icu/proxy/https://storage1.picacomic.com', PICA_S3_BASE)
+          .replace('https://proxy.hanze.icu/proxy/https://storage-b.picacomic.com', PICA_S3_BASE)
+          .replace('https://proxy.hanze.icu/proxy/https://img.picacomic.com', PICA_S3_BASE)
           .replace(
             'https://www.picacomic.com',
             'https://pica-pica.wikawika.xyz'
