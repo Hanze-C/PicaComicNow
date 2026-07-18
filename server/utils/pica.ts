@@ -26,7 +26,7 @@ export function replaceFileUrl(obj: Record<string, any>): Record<string, any> {
       if (val.startsWith('https://')) {
         obj[key] = val
           .replace('https://storage1.picacomic.com', 'https://proxy.hanze.icu/proxy/https://storage1.picacomic.com')
-          .replace('https://storage-b.picacomic.com','https://proxy.hanze.icu/proxy/https://storage-b.picacomic.com')
+          .replace('https://storage-b.picacomic.com', 'https://proxy.hanze.icu/proxy/https://storage-b.picacomic.com')
           .replace('https://img.picacomic.com', 'https://proxy.hanze.icu/proxy/https://img.picacomic.com')
           .replace(
             'https://www.picacomic.com',
