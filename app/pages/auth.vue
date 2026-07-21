@@ -3,7 +3,7 @@
   h1 {{ user.profile ? '账户设置' : mode === 'login' ? '登录' : '注册' }}
 
   PicaMbox(v-if='$route.query.tips', type='info', header='提示', style='margin-bottom: 1rem')
-    p 请先登录后使用
+    p 请先登录后使用(请使用无痕模式)
 
   section.account-section(v-if='user.profile')
     PicaCard
